@@ -1,7 +1,20 @@
-{% extends "../base/base.html" %}{% load static %}{% block title %} Home | Hopecare {% endblock %}
+{% extends "../base/base.html" %}{% load static %}{% block title %} Home | HSF {% endblock %}
 
 {% block template %}
     
-    <h1>Success</h1>
+    <div class="content">
+        <div class="landing-socket">
+            {% include "../hopeTemp/landing.html" %}
+        </div>
+        <div class="landing-socket">
+            {% include "../hopeTemp/firstsection.html" %}
+        </div>
+        <div class="projects-socket">
+            {% include "../hopeTemp/projects.html" %}
+        </div>
+        <div class="gallery-socket">
+            {% include "../hopeTemp/gallery.html" %}
+        </div>
+    </div>
 
 {% endblock %}

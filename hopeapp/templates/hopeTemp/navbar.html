@@ -1,0 +1,74 @@
+{% extends '../base/base.html' %}{% load static %}{% block navbar %}
+<div class="navbar-wrapper" id="navbar">
+    <div class="left-side-nav">
+      <div class="brand-name-holder">
+        <a href="">Homecare Spiritual Foundation</a>
+      </div>
+      <div class="first-nav-links">
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Testimonials</a>
+      </div>
+    </div>
+    <div class="right-side-nav">
+      <div class="second-nav-links">
+        <div class="connect-link">
+          <a href="">Connect</a>
+        </div>
+        <div class="link-line">
+          <div class="nav-divider-line"></div>
+        </div>
+        <div class="ocho-verse-link">
+          <a href="">
+            <img src="{% static 'images/ocho-verse.svg' %}" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="side-nav">
+        <div class="ham-menu-wrapper">
+          <div class="open-btn" onclick="openNav()">
+            <div class="hamburger">
+              <span class="bar top"></span>
+              <span class="bar middle"></span>
+              <span class="bar bottom"></span>
+            </div>
+          </div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a href="">Works</a>
+          <div class="inner-nav-line"></div>
+          <a href="">Support</a>
+          <div class="inner-nav-line"></div>
+          <a href="">Chat with us</a>
+          <div class="inner-nav-line"></div>
+          <a href="">
+            <img src="" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    window.onscroll = function () {
+      scrollFunction();
+    };
+    function scrollFunction() {
+      var navbar = document.getElementById("navbar");
+      if (document.body.scrollTop > 4 || document.documentElement.scrollTop > 4) {
+        navbar.classList.add("nav-blur");
+      } else {
+        navbar.classList.remove("nav-blur");
+      }
+    }
+  </script>
+  
+  {% endblock %}

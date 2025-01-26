@@ -1,0 +1,131 @@
+{% extends "../base/base.html" %}{% load static %} {% block landing %}
+{% include "../hopeTemp/navbar.html" %}
+<div class="landing-wrapper">
+  <div class="inner-landing-wrapper">
+    <div class="carousel-wrapper">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="{% static 'images/image1.jpg' %}"
+              class="d-block w-100"
+              alt="..."
+            />
+
+            <div class="overlay-carousel">
+              <div class="carousel-caption-x">
+                <div class="carousel-caption-content">
+                  <h5>Welcome to</h5>
+                  <h1>
+                    <span>
+                      Homecare Spiritual <br />
+                      Fellowship,
+                    </span>
+                    where action <br />
+                    becomes impact.
+                  </h1>
+                  <div class="global-button">
+                    <a href="">Explore</a>
+                  </div>
+                </div>
+              </div>
+              <div class="left-carousel-width">
+                <div class="image-carousel-item">
+                  <img src="{% static 'images/vector.svg' %}" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="{% static 'images/image2.jpg' %}"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="overlay-carousel-x">
+              <div class="carousel-caption-x-x">
+                <div class="caption-image-carousel">
+                  <img src="{% static 'images/image2.jpg' %}" alt="" />
+                </div>
+                <div class="caption-caption-carousel">
+                  <h1>Second slide label</h1>
+                  <p>
+                    Some representative placeholder content for the second
+                    slide.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="{% static 'images/image3.JPG' %}"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="overlay-carousel-x">
+                <div class="carousel-caption-x-x">
+                  <div class="caption-image-carousel">
+                    <img src="{% static 'images/image3.JPG' %}" alt="" />
+                  </div>
+                  <div class="caption-caption-carousel">
+                    <h1>Second slide label</h1>
+                    <p>
+                      Some representative placeholder content for the second
+                      slide.
+                    </p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

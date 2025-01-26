@@ -1,0 +1,68 @@
+{% extends '../base/base.html' %}{% load static %}{% block projects %}
+<div class="projects-wrapper">
+  <div class="title-projects-wrapper">
+    <div class="section-content-title">
+      <h1>Projects</h1>
+    </div>
+    <div class="section-content-title-line"></div>
+
+    <div class="projects-wrapper-items">
+      <div class="infinite-scroll">
+        <div
+          class="project-card"
+          data-title="Project 1"
+          data-description="Description of Project 1"
+        ></div>
+        <div
+          class="project-card"
+          data-title="Project 2"
+          data-description="Description of Project 2"
+        ></div>
+        <div
+          class="project-card"
+          data-title="Project 3"
+          data-description="Description of Project 3"
+        ></div>
+        <div
+          class="project-card"
+          data-title="Project 4"
+          data-description="Description of Project 4"
+        ></div>
+        <!-- Add more project cards here -->
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="section-content-title">
+          <h1>Projects</h1>
+        </div>
+        <!-- <div class="section-content-title-line"></div> -->
+        <div class="section-left-content">
+          <p>
+            We are an interdenominational fellowship of Believers committed to
+            prayer for God’s purpose to be manifest in Families, the Nation and
+            in Evangelism. Since incorporation in 1985, Homecare has grown
+            tremendously to over 1000 members, spread over several branches in
+            Kenya and abroad. The year-round, weekly prayer forums bear
+            testimony to God’s restoration and empowerment. We give God all the
+            glory.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const scrollContainer = document.querySelector(".infinite-scroll");
+  const cards = Array.from(scrollContainer.children);
+
+  // Clone each card and append it to the container
+  cards.forEach((card) => {
+    const clone = card.cloneNode(true);
+    scrollContainer.appendChild(clone);
+  });
+</script>
+
+{% endblock %}

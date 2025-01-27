@@ -614,7 +614,7 @@
 }
 .inner-news-letter-item{
   position: absolute;
-  width: 80%;
+  width: 60%;
   height: 200px;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -639,6 +639,7 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 .newsletter-content {
+  border: 1px solid var(--primary-color-orange);
   padding: 8px;
   height: 550px;
   overflow-y: scroll;

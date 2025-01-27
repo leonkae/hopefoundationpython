@@ -602,13 +602,41 @@
 .newsletter-item {
   height: 350px;
   margin-bottom: 1rem;
+  position: relative;
 }
 .newsletter-item img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: center;
+  border-radius: 10px;
   border: 1px solid var(--primary-color-orange);
+}
+.inner-news-letter-item{
+  position: absolute;
+  width: 80%;
+  height: 200px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  bottom: 10px;
+  left: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #26323842;
+  backdrop-filter: blur(5px);
+}
+.inner-news-letter-item h1{
+  color: white;
+  font-weight: 500;
+  font-size: larger;
+}
+.inner-news-letter-item p{
+  color: white;
+  font-weight: 500;
+}
+.newsletter-item-card{
+  padding: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 .newsletter-content {
   padding: 8px;
@@ -802,6 +830,7 @@
 .inner-team-wrapper{
   width: 85%;
 }
+
 .team-section-people{
   height: 700px;
   overflow: scroll;

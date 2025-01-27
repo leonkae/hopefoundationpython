@@ -264,6 +264,9 @@
 .hamburger:hover .bar.bottom {
   transform: translateY(-50%) scaleX(0.4);
 }
+.inner-landing-wrapper{
+  background-color: var(--carousel-image);
+}
 .inner-nav-line {
   width: 70%;
   height: 1px;
@@ -273,7 +276,7 @@
 .connect-link a,
 .first-nav-links a {
   text-decoration: none;
-  color: white;
+  color: var(--carousel-image);
   font-size: 15px;
 }
 .connect-link a:hover,
@@ -291,7 +294,7 @@
 }
 .brand-name-holder a {
   text-decoration: none;
-  color: white;
+  color: var(--carousel-image);
   font-size: 16px;
 }
 .first-section-wrapper {
@@ -313,10 +316,10 @@
   width: 85%;
 }
 .nav-blur {
-  background-color: var(--carousel-image);
+  background-color: white;
   backdrop-filter: blur(10px);
   border: none;
-  border-bottom: 1px solid var(--primary-color-orange);
+  border-bottom: 1px solid white;
 }
 .section-content-title h1 {
   font-size: larger;

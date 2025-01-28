@@ -609,7 +609,7 @@
   width: 100%;
   object-fit: cover;
   object-position: center;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   border: 1px solid var(--primary-color-orange);
 }
 .inner-news-letter-item{
@@ -635,11 +635,12 @@
   font-weight: 500;
 }
 .newsletter-item-card{
-  padding: 10px;
+  padding: 30px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: var(--carousel-image);
 }
 .newsletter-content {
-  border: 1px solid var(--primary-color-orange);
+  /* border: 1px solid var(--primary-color-orange); */
   padding: 8px;
   height: 550px;
   overflow-y: scroll;

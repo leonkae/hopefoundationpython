@@ -14,12 +14,15 @@
       <div class="center-bolt">
         <div class="service-cards">
           <div class="slider-reel">
+
+
+            {% for event in events %}
             <div class="card-x">
               <div class="card-x-inner-menu">
-                <img src="{% static 'images/image1.jpg' %}" alt="" />
+                <img src="{{event.image.url}}" alt="{{ event.title }}" />
                 <div class="bottom-left-x-cats">
                   <div class="title-left-x-cats">
-                    <h1>The event</h1>
+                    <h1>{{event.title}}</h1>
                   </div>
                 </div>
               </div>
@@ -27,45 +30,9 @@
                 <a href="">Learn more</a>
               </div>
             </div>
-            <div class="card-x">
-              <div class="card-x-inner-menu">
-                <img src="{% static 'images/image1.jpg' %}" alt="" />
-                <div class="bottom-left-x-cats">
-                  <div class="title-left-x-cats">
-                    <h1>The event</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="global-button-white">
-                <a href="">Learn more</a>
-              </div>
-            </div>
-            <div class="card-x">
-              <div class="card-x-inner-menu">
-                <img src="{% static 'images/image1.jpg' %}" alt="" />
-                <div class="bottom-left-x-cats">
-                  <div class="title-left-x-cats">
-                    <h1>The event</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="global-button-white">
-                <a href="">Learn more</a>
-              </div>
-            </div>
-            <div class="card-x">
-              <div class="card-x-inner-menu">
-                <img src="{% static 'images/image1.jpg' %}" alt="" />
-                <div class="bottom-left-x-cats">
-                  <div class="title-left-x-cats">
-                    <h1>The event</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="global-button-white">
-                <a href="">Learn more</a>
-              </div>
-            </div>
+            {% endfor %}
+
+            
           </div>
         </div>
       </div>

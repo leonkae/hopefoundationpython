@@ -8,83 +8,19 @@
     <div class="section-content-title-line"></div>
     <div class="team-section-people">
       <div class="row">
+        {% for team in teams %}
         <div class="col-lg-3 p-1">
           <div class="people-card">
             <div class="people-card-image">
-              <img src="{% static 'images/mwabonje.jpg' %}" alt="" />
+              <img src="{{team.image.url}}" alt="" />
             </div>
             <div class="people-card-content">
-              <h1>John Doe</h1>
-              <p>Founder</p>
+              <h1>{{team.name}}</h1>
+              <p>{{team.title}}</p>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 p-1">
-          <div class="people-card">
-            <div class="people-card-image">
-              <img src="{% static 'images/mwabonje.jpg' %}" alt="" />
-            </div>
-            <div class="people-card-content">
-              <h1>John Doe</h1>
-              <p>Founder</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 p-1">
-          <div class="people-card">
-            <div class="people-card-image">
-              <img src="{% static 'images/mwabonje.jpg' %}" alt="" />
-            </div>
-            <div class="people-card-content">
-              <h1>John Doe</h1>
-              <p>Founder</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 p-1">
-          <div class="people-card">
-            <div class="people-card-image">
-              <img src="{% static 'images/mwabonje.jpg' %}" alt="" />
-            </div>
-            <div class="people-card-content">
-              <h1>John Doe</h1>
-              <p>Founder</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 p-1">
-          <div class="people-card">
-            <div class="people-card-image">
-              <img src="{% static 'images/mwabonje.jpg' %}" alt="" />
-            </div>
-            <div class="people-card-content">
-              <h1>John Doe</h1>
-              <p>Founder</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 p-1">
-          <div class="people-card">
-            <div class="people-card-image">
-              <img src="{% static 'images/mwabonje.jpg' %}" alt="" />
-            </div>
-            <div class="people-card-content">
-              <h1>John Doe</h1>
-              <p>Founder</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 p-1">
-          <div class="people-card">
-            <div class="people-card-image">
-              <img src="{% static 'images/mwabonje.jpg' %}" alt="" />
-            </div>
-            <div class="people-card-content">
-              <h1>John Doe</h1>
-              <p>Founder</p>
-            </div>
-          </div>
-        </div>
+       {% endfor %}
       </div>
     </div>
   </div>

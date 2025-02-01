@@ -5,56 +5,8 @@
       <h1>Programmes</h1>
     </div>
     <div class="section-content-title-line"></div>
-
-    <div class="projects-wrapper-items">
-      <div class="infinite-scroll">
-        <div
-          class="project-card"
-          data-title="Project 1"
-          data-description="Description of Project 1"
-        >
-          <!-- <div class="global-button-white">
-            <a href="">Explore</a>
-          </div> -->
-        </div>
-
-        <div
-          class="project-card"
-          data-title="Project 2"
-          data-description="Description of Project 2"
-        >
-          <!-- <div class="global-button-white">
-            <a href="">Explore</a>
-          </div> -->
-        </div>
-        <div
-          class="project-card"
-          data-title="Project 3"
-          data-description="Description of Project 3"
-        >
-          <!-- <div class="global-button-white">
-            <a href="">Explore</a>
-          </div> -->
-        </div>
-        <div
-          class="project-card"
-          data-title="Project 4"
-          data-description="Description of Project 4"
-        >
-          <!-- <div class="global-button-white">
-            <a href="">Explore</a>
-          </div> -->
-        </div>
-        <!-- Add more project cards here -->
-      </div>
-    </div>
-
-    <div class="row">
+    <div class="row mt-2">
       <div class="col-lg-6">
-        <div class="section-content-title">
-          <h1>Programmes</h1>
-        </div>
-        <!-- <div class="section-content-title-line"></div> -->
         <div class="section-left-content">
           <p>
             We are an interdenominational fellowship of Believers committed to
@@ -65,6 +17,29 @@
             testimony to God’s restoration and empowerment. We give God all the
             glory.
           </p>
+        </div>
+      </div>
+    </div>
+    <div class="events-slider">
+      <div class="center-bolt">
+        <div class="service-cards">
+          <div class="slider-reel">
+            {% for prog in progs %}
+            <div class="card-x">
+              <div class="card-x-inner-menu">
+                <img src="{{prog.image.url}}" alt="{{ prog.title }}" />
+                <div class="bottom-left-x-cats">
+                  <div class="title-left-x-cats">
+                    <h1>{{prog.title}}</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="global-button-white">
+                <a href="">Learn more</a>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
         </div>
       </div>
     </div>

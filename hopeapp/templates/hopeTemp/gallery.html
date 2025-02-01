@@ -1,7 +1,7 @@
 {% extends '../base/base.html' %}{% load static %}{% block gallery %}
 
 <div class="gallery-content-section">
-  <div class="gallery">
+  <!-- <div class="gallery">
     <div class="gallery-title">
       <div class="section-content-title">
         <h1>View our gallery</h1>
@@ -43,6 +43,28 @@
       src="https://picsum.photos/id/1057/300/300"
       alt="a great view of the sea above the mountain"
     />
+  </div> -->
+
+  <div class="new-gallery">
+    <div class="new-gallery-inner">
+      <div class="new-gallery-title">
+        <div class="the-acct-title">
+          <h1>Your gallery</h1>
+          <div class="section-content-title-line"></div>
+        </div>
+      </div>
+      <div class="gals-row">
+        <div class="row">
+          {% for gal in gals %}
+          <div class="col-lg-3 p-1">
+            <div class="new-gallery-item">
+              <img src="{{gal.image.url}}" alt="" />
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 

@@ -23,8 +23,33 @@
   --carousel-image: #263238;
   --dark-color: #111111;
 }
+.top-landing{
+  height: 30vh;
+  background-image: url(../images/dom.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+.inner-top-landing{
+  height: 100%;
+  background-color: #00000073;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.inner-top-landing h5{
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.inner-top-landing h1{
+  color: white;
+  font-size: 35px;
+  text-align: center;
+}
 .carousel-item {
-  height: 100vh;
+  height: 85vh;
   background-color: black;
 }
 .carousel-item img {
@@ -69,9 +94,9 @@
   padding: 20px;
   width: 400px;
   height: 250px;
-  background-color: #ff91005b;
+  /* background-color: #ff91005b;
   border: 1px solid var(--primary-color-orange);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px); */
 }
 .caption-caption-carousel h1 {
   color: white;
@@ -264,7 +289,7 @@
 .hamburger:hover .bar.bottom {
   transform: translateY(-50%) scaleX(0.4);
 }
-.inner-landing-wrapper{
+.inner-landing-wrapper {
   background-color: var(--carousel-image);
 }
 .inner-nav-line {
@@ -504,10 +529,13 @@
 }
 .gallery-content-section {
   height: 100vh;
-  padding: 30px;
+  /* padding: 30px;
   display: grid;
   place-content: center;
-  background: #f3f3f3;
+  background: #f3f3f3; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .gallery {
   --s: 240px; /* control the size of the images */
@@ -612,7 +640,7 @@
   /* border-radius: 10px; */
   border: 1px solid var(--primary-color-orange);
 }
-.inner-news-letter-item{
+.inner-news-letter-item {
   position: absolute;
   width: 60%;
   height: 200px;
@@ -625,19 +653,19 @@
   background-color: #26323842;
   backdrop-filter: blur(5px);
 }
-.inner-news-letter-item h1{
+.inner-news-letter-item h1 {
   color: white;
   font-weight: 500;
   font-size: larger;
 }
-.inner-news-letter-item p{
+.inner-news-letter-item p {
   color: white;
   font-weight: 500;
 }
-.newsletter-item-card{
+.newsletter-item-card {
   padding: 30px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  background-color: var(--carousel-image);
+  /* background-color: var(--carousel-image); */
 }
 .newsletter-content {
   /* border: 1px solid var(--primary-color-orange); */
@@ -782,7 +810,7 @@
   font-size: larger;
   color: white;
 }
-.events-slider{
+.events-slider {
   margin-top: 2rem;
 }
 .location-wrapper {
@@ -816,30 +844,30 @@
   align-items: flex-start;
   gap: 8px;
 }
-.address h2{
+.address h2 {
   color: var(--carousel-image);
   font-size: larger;
 }
-.address p{
+.address p {
   color: var(--carousel-image);
 }
-.team-wrapper{
+.team-wrapper {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.inner-team-wrapper{
+.inner-team-wrapper {
   width: 85%;
 }
 
-.team-section-people{
+.team-section-people {
   height: 700px;
   overflow: scroll;
   overflow-x: hidden;
   padding: 10px;
 }
-.people-card{
+.people-card {
   height: 400px;
   display: flex;
   align-items: center;
@@ -847,20 +875,20 @@
   flex-direction: column;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
-.people-card-image{
+.people-card-image {
   border: 1px solid var(--primary-color-orange);
   height: 230px;
   width: 230px;
   border-radius: 100%;
 }
-.people-card-image img{
+.people-card-image img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: center;
   border-radius: 100%;
 }
-.people-card-content{
+.people-card-content {
   margin-top: 1rem;
   width: 100%;
   padding: 20px;
@@ -869,12 +897,47 @@
   justify-content: center;
   flex-direction: column;
 }
-.people-card-content h1{
+.people-card-content h1 {
   font-size: larger;
   color: var(--carousel-image);
   font-weight: 500;
 }
-.people-card-content p{
+.people-card-content p {
   font-style: italic;
   font-weight: 500;
+}
+.new-gallery-title {
+  height: 85vh;
+  width: 310px;
+  background-color: var(--carousel-image);
+}
+.the-acct-title{
+  padding: 20px;
+}
+.the-acct-title h1{
+  color: white;
+  font-size: larger;
+}
+.new-gallery {
+  width: 85%;
+}
+.new-gallery-inner {
+  height: 85vh;
+  display: flex;
+  justify-content: space-between;
+}
+.gals-row{
+  border: 1px solid var(--primary-color-orange);
+  padding: 30px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.new-gallery-item {
+  height: 320px;
+}
+.new-gallery-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }

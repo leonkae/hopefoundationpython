@@ -1081,3 +1081,20 @@
   margin-bottom: 10px;
   border-radius: 10px;
 }
+.success-page-wrapper{
+  height: 100vh;
+  background-color: var(--carousel-image);
+}
+.success-message{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.success-message h1{
+  color: white;
+  font-size: larger;
+  margin-bottom: 1rem;
+}

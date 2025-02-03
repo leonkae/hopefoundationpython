@@ -1,0 +1,17 @@
+{% extends '../base/base.html' %}{% load static %}{% block error %}
+
+<div class="success-page-wrapper">
+  <div class="success-message">
+    <div class="mpesa-till">
+      <img src="{% static 'images/sad.svg' %}" alt="" />
+      <div class="Mpesa-transactions">
+      </div>
+    </div>
+    <h1>Ooops, that didnt work lets try again.</h1>
+    <div class="global-button-white">
+      <a href="{% url 'donate' %}">Back</a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

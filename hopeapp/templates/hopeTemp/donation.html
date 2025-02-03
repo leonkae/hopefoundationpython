@@ -15,6 +15,7 @@
     <div class="inner-top-landing-x">
       <div class="the-actual-forms">
         <div class="row">
+          <!-- Donation Form -->
           <div class="col-lg-4">
             <div class="actual-forms-x">
               <div class="section-content-title">
@@ -41,40 +42,45 @@
                       </p>
                     </div>
                   </div>
-                  <form method="post">
+                  <form
+                    method="post"
+                    action="{% url 'donate' %}"
+                  >
                     {% csrf_token %}
+                    <input type="hidden" name="form_type" value="donation" />
+
                     <input
                       type="text"
-                      id="donate-name"
+                      name="name"
                       placeholder="Your Name"
                       required
                     />
 
                     <input
                       type="tel"
-                      id="donate-number"
+                      name="phone_number"
                       placeholder="Your Phone Number"
                       required
                     />
 
                     <input
-                      type="tel"
-                      id="mpesa-code"
-                      placeholder="Your mpesa code"
+                      type="text"
+                      name="mpesa_code"
+                      placeholder="Your M-Pesa Code"
                       required
                     />
 
                     <input
                       type="email"
-                      id="donate-email"
+                      name="email"
                       placeholder="Your Email"
                       required
                     />
 
                     <input
                       type="number"
-                      id="donate-amount"
-                      placeholder="Donated amount"
+                      name="amount"
+                      placeholder="Donated Amount"
                       required
                     />
 
@@ -86,6 +92,8 @@
               </div>
             </div>
           </div>
+
+          <!-- Volunteer Form -->
           <div class="col-lg-4">
             <div class="actual-forms-x">
               <div class="section-content-title">
@@ -93,38 +101,43 @@
               </div>
               <div class="section-content-title-line"></div>
               <div class="donate-form">
-                <div id="donate-form" class="form-hidden">
+                <div id="volunteer-form" class="form-hidden">
                   <div class="mpesa-till">
                     <img src="{% static 'images/people.svg' %}" alt="" />
                     <div class="Mpesa-transactions">
                       <p>Register here to volunteer</p>
                     </div>
                   </div>
-                  <form method="post">
+                  <form
+                    method="post"
+                    action="{% url 'donate' %}"
+                  >
                     {% csrf_token %}
+                    <input type="hidden" name="form_type" value="volunteer" />
+
                     <input
                       type="text"
-                      id="volunteer-fname"
+                      name="first_name"
                       placeholder="Your First Name"
                       required
                     />
 
                     <input
                       type="text"
-                      id="volunteer-lname"
+                      name="last_name"
                       placeholder="Your Last Name"
                       required
                     />
 
                     <input
                       type="email"
-                      id="volunteer-email"
+                      name="email"
                       placeholder="Your Email"
                       required
                     />
 
                     <textarea
-                      id="volunteer-essay"
+                      name="reason"
                       placeholder="Write your reasons here"
                       required
                     ></textarea>
@@ -137,45 +150,52 @@
               </div>
             </div>
           </div>
+
+          <!-- Contact Form -->
           <div class="col-lg-4">
             <div class="actual-forms-x">
               <div class="section-content-title">
-                <h1>Reach out</h1>
+                <h1>Reach Out</h1>
               </div>
               <div class="section-content-title-line"></div>
               <div class="donate-form">
-                <div id="donate-form" class="form-hidden">
+                <div id="contact-form" class="form-hidden">
                   <div class="mpesa-till">
                     <img src="{% static 'images/mail.svg' %}" alt="" />
                     <div class="Mpesa-transactions">
-                      <p>Leave a message and we get back</p>
+                      <p>Leave a message and we will get back to you</p>
                     </div>
                   </div>
-                  <form method="post">
+                  <form
+                    method="post"
+                    action="{% url 'donate' %}"
+                  >
                     {% csrf_token %}
+                    <input type="hidden" name="form_type" value="contact" />
+
                     <input
                       type="text"
-                      id="reach-name"
+                      name="name"
                       placeholder="Your Name"
                       required
                     />
 
                     <input
                       type="tel"
-                      id="reach-number"
+                      name="phone_number"
                       placeholder="Your Phone Number"
                       required
                     />
 
                     <input
                       type="email"
-                      id="reach-email"
+                      name="email"
                       placeholder="Your Email"
                       required
                     />
 
                     <textarea
-                      id="reach-essay"
+                      name="message"
                       placeholder="Talk to us"
                       required
                     ></textarea>

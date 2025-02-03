@@ -1,0 +1,16 @@
+{% extends '../base/base.html' %}{% load static %}{% block success %}
+
+<div class="success-page-wrapper">
+  <div class="success-message">
+    <div class="mpesa-till">
+      <img src="{% static 'images/smile.svg' %}" alt="" />
+      <div class="Mpesa-transactions"></div>
+    </div>
+    <h1>Success, Your submission was received.</h1>
+    <div class="global-button-white">
+      <a href="{% url 'donate' %}">Back</a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -41,7 +41,8 @@
                       </p>
                     </div>
                   </div>
-                  <form>
+                  <form method="post">
+                    {% csrf_token %}
                     <input
                       type="text"
                       id="donate-name"
@@ -99,7 +100,8 @@
                       <p>Register here to volunteer</p>
                     </div>
                   </div>
-                  <form>
+                  <form method="post">
+                    {% csrf_token %}
                     <input
                       type="text"
                       id="volunteer-fname"
@@ -149,7 +151,8 @@
                       <p>Leave a message and we get back</p>
                     </div>
                   </div>
-                  <form>
+                  <form method="post">
+                    {% csrf_token %}
                     <input
                       type="text"
                       id="reach-name"

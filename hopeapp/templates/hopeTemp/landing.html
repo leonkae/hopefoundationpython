@@ -1,7 +1,6 @@
-{% extends "../base/base.html" %}{% load static %} {% block landing %} 
-{% include "../hopeTemp/navbar.html" %}
+{% extends "../base/base.html" %}{% load static %} {% block landing %} {% include "../hopeTemp/navbar.html" %}
 
-<div class="landing-wrapper" id="home" >
+<div class="landing-wrapper" id="home">
   <div class="inner-landing-wrapper">
     <div class="carousel-wrapper">
       <div
@@ -56,7 +55,6 @@
                   </div>
                 </div>
               </div>
-              
             </div>
           </div>
           <div class="carousel-item">
@@ -65,7 +63,6 @@
               class="d-block w-100"
               alt="..."
             />
-           
           </div>
           <div class="carousel-item">
             <img
@@ -73,7 +70,6 @@
               class="d-block w-100"
               alt="..."
             />
-           
           </div>
         </div>
         <button
@@ -98,16 +94,27 @@
     </div>
   </div>
 </div>
+
 <div class="top-landing">
   <div class="inner-top-landing">
     <h5>Welcome to</h5>
     <h1>
-      <span>
-        Homecare Spiritual 
-        Fellowship .
-      </span>
+      <span> Homecare Spiritual Fellowship . </span>
     </h1>
   </div>
+</div>
+
+<div class="bottom-landing">
+  <!-- Announcement Banner -->
+  <div class="max-w-[110rem] px-4 sm:px-6 lg:px-8 mx-auto">
+    <div
+      class="bg-blue-600 bg-[url('https://preline.co/assets/svg/examples/abstract-1.svg')] bg-no-repeat bg-cover bg-center p-4 rounded-lg text-center"
+    >
+      <p class="me-2 inline-block text-white">{{ announcements.title }}</p>
+      <p class="me-2 inline-block text-white"> - {{ announcements.message }}</p>
+    </div>
+  </div>
+  <!-- End Announcement Banner -->
 </div>
 
 {% endblock %}

@@ -1081,11 +1081,11 @@
   margin-bottom: 10px;
   border-radius: 10px;
 }
-.success-page-wrapper{
+.success-page-wrapper {
   height: 100vh;
   background-color: var(--carousel-image);
 }
-.success-message{
+.success-message {
   height: 100%;
   width: 100%;
   display: flex;
@@ -1093,8 +1093,11 @@
   justify-content: center;
   flex-direction: column;
 }
-.success-message h1{
+.success-message h1 {
   color: white;
   font-size: larger;
   margin-bottom: 1rem;
+}
+.bottom-landing {
+  padding: 2rem;
 }

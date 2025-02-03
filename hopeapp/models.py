@@ -72,5 +72,16 @@ class Volunteer(models.Model):
     
     def __str__(self):
         return self.name
-        
+
+class Mission(models.Model):
+    descriprion = models.TextField()
+    
+    def __str__(self):
+        return self.descriprion
+    
+class Vission(models.Model):
+    descriprion = models.TextField()
+    
+    def __str__(self):
+        return self.descriprion
     

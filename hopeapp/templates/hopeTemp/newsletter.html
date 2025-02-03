@@ -25,17 +25,62 @@
               <img src="{{ letter.image.url }}" alt="" />
               <div class="inner-news-letter-item">
                 <h1>{{letter.title}}</h1>
-                <p>
-                 {{letter.description}}
-                </p>
+                <!-- <p>{{letter.description}}</p> -->
               </div>
             </div>
             <div class="global-button-white">
-              <a href="">Learn more</a>
+              <a
+                href="#"
+                class="open-modal"
+                data-title="{{ letter.title }}"
+                data-description="{{ letter.description }}"
+                >Learn more</a
+              >
             </div>
           </div>
         </div>
         {% endfor %}
+
+        <div id="customModal" class="modal">
+          <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+          </div>
+
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const modal = document.getElementById("customModal");
+              const modalTitle = document.getElementById("modalTitle");
+              const modalDescription =
+                document.getElementById("modalDescription");
+              const closeModal = document.querySelector(".close-modal");
+
+              // Open modal on "Learn More" click
+              document.querySelectorAll(".open-modal").forEach((button) => {
+                button.addEventListener("click", function (event) {
+                  event.preventDefault();
+                  modalTitle.textContent = this.getAttribute("data-title");
+                  modalDescription.textContent =
+                    this.getAttribute("data-description");
+                  modal.style.display = "flex";
+                });
+              });
+
+              // Close modal when "X" is clicked
+              closeModal.addEventListener("click", function () {
+                modal.style.display = "none";
+              });
+
+              // Close modal when clicking outside the content
+              window.addEventListener("click", function (event) {
+                if (event.target === modal) {
+                  modal.style.display = "none";
+                }
+              });
+            });
+          </script>
+        </div>
       </div>
     </div>
   </div>

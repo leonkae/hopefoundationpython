@@ -14,8 +14,6 @@
       <div class="center-bolt">
         <div class="service-cards">
           <div class="slider-reel">
-
-
             {% for event in events %}
             <div class="card-x">
               <div class="card-x-inner-menu">
@@ -27,13 +25,62 @@
                 </div>
               </div>
               <div class="global-button-white">
-                <a href="">Learn more</a>
+                <a
+                  href="#"
+                  class="open-events-modal"
+                  data-title="{{ event.title }}"
+                  data-description="{{ event.description }}"
+                  >Learn more</a
+                >
               </div>
             </div>
             {% endfor %}
 
-            
+            <div id="eventsModal" class="events-modal">
+              <div class="events-modal-content">
+                <span class="close-events-modal">&times;</span>
+                <h2 id="eventsModalTitle"></h2>
+                <p id="eventsModalDescription"></p>
+              </div>
+              <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                  const modal = document.getElementById("eventsModal");
+                  const modalTitle =
+                    document.getElementById("eventsModalTitle");
+                  const modalDescription = document.getElementById(
+                    "eventsModalDescription"
+                  );
+                  const closeModal = document.querySelector(
+                    ".close-events-modal"
+                  );
+
+                  document
+                    .querySelectorAll(".open-events-modal")
+                    .forEach((button) => {
+                      button.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        modalTitle.textContent =
+                          this.getAttribute("data-title");
+                        modalDescription.textContent =
+                          this.getAttribute("data-description");
+                        modal.style.display = "flex";
+                      });
+                    });
+
+                  closeModal.addEventListener("click", function () {
+                    modal.style.display = "none";
+                  });
+
+                  window.addEventListener("click", function (event) {
+                    if (event.target === modal) {
+                      modal.style.display = "none";
+                    }
+                  });
+                });
+              </script>
+            </div>
           </div>
+          
         </div>
       </div>
     </div>

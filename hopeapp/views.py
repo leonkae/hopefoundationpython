@@ -28,3 +28,14 @@ class HomeView(ListView):
         
         return render(request, self.template_name,context)
     
+class DonateView(ListView):
+    template_name = "hopeTemp/donation.html"
+    
+    def get(self, request):
+      
+        context ={
+           
+        }
+        
+        return render(request, self.template_name,context)
+    

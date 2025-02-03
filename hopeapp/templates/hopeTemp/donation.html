@@ -1,0 +1,195 @@
+{% extends '../base/base.html' %}{% load static %}{% block donation %}
+
+<div class="donation-wrapper">
+  {% include "../hopeTemp/navbar.html" %}
+  <div class="inner-donation-wrapper">
+    <div class="top-landing">
+      <div class="inner-top-landing">
+        <h5>Homecare Spiritual Fellowship .</h5>
+        <h1>
+          <span> Donate, Volunteer and Communicate </span>
+        </h1>
+      </div>
+    </div>
+
+    <div class="inner-top-landing-x">
+      <div class="the-actual-forms">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="actual-forms-x">
+              <div class="section-content-title">
+                <h1>Donate</h1>
+              </div>
+              <div class="section-content-title-line"></div>
+              <div class="donate-form">
+                <div id="donate-form" class="form-hidden">
+                  <div class="mpesa-till">
+                    <img
+                      src="{% static 'images/mpesa-seeklogo.com.svg' %}"
+                      alt=""
+                    />
+                    <div class="Mpesa-transactions">
+                      <p>
+                        You can donate by sending money using the following
+                        details:<br />
+                        <strong>Paybill:</strong> 688698<br />
+                        <strong>A/c:</strong> Donation
+                      </p>
+                      <p>
+                        After completing the transaction, send us a screenshot
+                        on our WhatsApp. Look for the WhatsApp button above.
+                      </p>
+                    </div>
+                  </div>
+                  <form>
+                    <input
+                      type="text"
+                      id="donate-name"
+                      placeholder="Your Name"
+                      required
+                    />
+
+                    <input
+                      type="tel"
+                      id="donate-number"
+                      placeholder="Your Phone Number"
+                      required
+                    />
+
+                    <input
+                      type="tel"
+                      id="mpesa-code"
+                      placeholder="Your mpesa code"
+                      required
+                    />
+
+                    <input
+                      type="email"
+                      id="donate-email"
+                      placeholder="Your Email"
+                      required
+                    />
+
+                    <input
+                      type="number"
+                      id="donate-amount"
+                      placeholder="Donated amount"
+                      required
+                    />
+
+                    <button type="submit" class="global-button-white">
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="actual-forms-x">
+              <div class="section-content-title">
+                <h1>Volunteer</h1>
+              </div>
+              <div class="section-content-title-line"></div>
+              <div class="donate-form">
+                <div id="donate-form" class="form-hidden">
+                  <div class="mpesa-till">
+                    <img src="{% static 'images/people.svg' %}" alt="" />
+                    <div class="Mpesa-transactions">
+                      <p>Register here to volunteer</p>
+                    </div>
+                  </div>
+                  <form>
+                    <input
+                      type="text"
+                      id="volunteer-fname"
+                      placeholder="Your First Name"
+                      required
+                    />
+
+                    <input
+                      type="text"
+                      id="volunteer-lname"
+                      placeholder="Your Last Name"
+                      required
+                    />
+
+                    <input
+                      type="email"
+                      id="volunteer-email"
+                      placeholder="Your Email"
+                      required
+                    />
+
+                    <textarea
+                      id="volunteer-essay"
+                      placeholder="Write your reasons here"
+                      required
+                    ></textarea>
+
+                    <button type="submit" class="global-button-white">
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="actual-forms-x">
+              <div class="section-content-title">
+                <h1>Reach out</h1>
+              </div>
+              <div class="section-content-title-line"></div>
+              <div class="donate-form">
+                <div id="donate-form" class="form-hidden">
+                  <div class="mpesa-till">
+                    <img src="{% static 'images/mail.svg' %}" alt="" />
+                    <div class="Mpesa-transactions">
+                      <p>Leave a message and we get back</p>
+                    </div>
+                  </div>
+                  <form>
+                    <input
+                      type="text"
+                      id="reach-name"
+                      placeholder="Your Name"
+                      required
+                    />
+
+                    <input
+                      type="tel"
+                      id="reach-number"
+                      placeholder="Your Phone Number"
+                      required
+                    />
+
+                    <input
+                      type="email"
+                      id="reach-email"
+                      placeholder="Your Email"
+                      required
+                    />
+
+                    <textarea
+                      id="reach-essay"
+                      placeholder="Talk to us"
+                      required
+                    ></textarea>
+
+                    <button type="submit" class="global-button-white">
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-socket">{% include "../hopeTemp/footer.html" %}</div>
+</div>
+
+{% endblock %}

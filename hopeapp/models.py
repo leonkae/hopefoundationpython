@@ -85,3 +85,9 @@ class Vission(models.Model):
     def __str__(self):
         return self.descriprion
     
+class About(models.Model):
+    description = models.TextField()
+    
+    def __str__(self):
+        return self.description
+    

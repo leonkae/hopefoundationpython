@@ -14,6 +14,7 @@ class HomeView(ListView):
         gals = Gallery.objects.all()
         vission = Vission.objects.first()
         mission = Mission.objects.first()
+        about = About.objects.first()
         context ={
             "events":events,
             "letters":letters,
@@ -21,7 +22,8 @@ class HomeView(ListView):
             "teams":teams,
             "gals":gals,
             "vission":vission,
-            "mission":mission
+            "mission":mission,
+            "about":about
         }
         
         return render(request, self.template_name,context)

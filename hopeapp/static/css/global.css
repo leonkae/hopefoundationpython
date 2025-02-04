@@ -408,6 +408,13 @@
   background-color: #ffffff;
   position: relative;
 }
+@media screen and (max-width: 1000px) {
+  .first-section-wrapper{
+    height: 100%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+}
 .right-about-section {
   position: absolute;
   width: 45%;

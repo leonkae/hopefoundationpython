@@ -1092,6 +1092,14 @@
   text-align: start;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
+@media screen and (max-width: 1000px) {
+  .modal-content {
+    padding: 1rem;
+    width: 90%;
+    border-radius: 0px;
+    border: 1px solid var(--primary-color-orange);
+  }
+}
 .close-modal {
   float: right;
   font-size: larger;
@@ -1117,6 +1125,14 @@
   width: 50%;
   text-align: start;
 }
+@media screen and (max-width: 1000px) {
+  .events-modal-content {
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0px;
+    border: 1px solid var(--primary-color-orange);
+  }
+}
 .close-events-modal {
   float: right;
   font-size: larger;
@@ -1140,6 +1156,14 @@
   border-radius: 8px;
   width: 50%;
   text-align: start;
+}
+@media screen and (max-width: 1000px) {
+  .progs-modal-content {
+    padding: 1rem;
+    width: 90%;
+    border-radius: 0px;
+    border: 1px solid var(--primary-color-orange);
+  }
 }
 .close-progs-modal {
   float: right;
@@ -1223,6 +1247,13 @@
 }
 .bottom-landing {
   padding: 2rem;
+}
+@media screen and (max-width: 1000px) {
+  .bottom-landing {
+    background-color: var(--carousel-image);
+    background-image: url('https://preline.co/assets/svg/examples/abstract-1.svg');
+    background-size: contain;
+  }
 }
 @media screen and (max-width: 1000px) {
   .donate-form{

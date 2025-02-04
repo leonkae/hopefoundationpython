@@ -832,7 +832,6 @@
 }
 .location-wrapper {
   padding: 30px;
-  background-image: url(assets/images/map.png);
   background-position: center;
   background-size: cover;
 }

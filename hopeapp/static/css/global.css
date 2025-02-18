@@ -659,6 +659,7 @@
 @media screen and (max-width: 1000px) {
   .gallery-content-section {
     padding: 1rem;
+    flex-direction: column;
   }
 }
 .gallery {
@@ -1050,6 +1051,11 @@
 }
 .the-acct-title {
   padding: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .the-acct-title {
+    width: 100%;
+  }
 }
 .the-acct-title h1 {
   color: white;

@@ -24,20 +24,20 @@ SECRET_KEY = 'django-insecure-4g!qfw^2x%tnk+@o$1f84hi@qplji&72bc8&-vk^4!vnpiyjia
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
+# SESSION_COOKIE_SECURE = True
+# CSRF_COOKIE_SECURE = True
 
-SECURE_HSTS_SECONDS = 31536000
+# SECURE_HSTS_SECONDS = 31536000
 
-SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+# SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 
-SECURE_HSTS_PRELOAD = True
+# SECURE_HSTS_PRELOAD = True
 
-SECURE_SSL_REDIRECT = True
+# SECURE_SSL_REDIRECT = True
 
-SECURE_REFERRER_POLICY = 'strict-origin'
+# SECURE_REFERRER_POLICY = 'strict-origin'
 
-SECURE_BROWSER_XSS_FILTER = True
+# SECURE_BROWSER_XSS_FILTER = True
 
 ALLOWED_HOSTS = ["homecaresf.org","www.homecaresf.org","127.0.0.1"]
 
@@ -132,9 +132,9 @@ USE_TZ = True
 
 
 STATIC_URL = "/static/"
-STATICFILES_DIRS = [
-    BASE_DIR / 'static'
-]
+# STATICFILES_DIRS = [
+#     BASE_DIR / 'static'
+# ]
 STATIC_ROOT = BASE_DIR / "staticfiles"
 # Media Configurations
 MEDIA_DIR = BASE_DIR / "media"

@@ -8,7 +8,7 @@
     <div class="section-content-title-line"></div>
     <div class="acct-section-content">
       <div class="right-about-section">
-        <img src="{% static 'images/JM.png' %}" alt="">
+        <img src="{% static 'images/JM.png' %}" alt="" />
       </div>
       <div class="row">
         <div class="col-lg-6">
@@ -18,9 +18,7 @@
               Homecare Spiritual Fellowship <br />
               International (HSF)
             </h1>
-            <p>
-              {{about.description}}
-            </p>
+            <p>{{about.description}}</p>
           </div>
         </div>
       </div>
@@ -30,26 +28,6 @@
 <div class="second-section-wrapper">
   <div class="mission-vission-wrapper">
     <div class="row">
-      <div class="col-lg-6">
-        <div class="section-right-content">
-          <div class="image-grid">
-            <div class="image-item-1">
-              <img src="{% static 'images/PIC-ONE-MISSION.jpeg' %}" alt="Image 1" />
-            </div>
-            <div class="image-item-2">
-              <img src="{% static 'images/PIC-TWO-MISSION.jpeg' %}" alt="Image 2" />
-            </div>
-            <div class="image-item-3">
-              <img
-                src="{% static 'images/PIC-THREE-MISSION.jpeg' %}"
-                alt="Image 3"
-                id="image-three"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div class="col-lg-6">
         <div class="section-content-title">
           <h1>Mission</h1>
@@ -64,6 +42,39 @@
         <div class="section-content-title-line"></div>
         <div class="section-left-content">
           <p>{{ vission.descriprion }}</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="section-right-content">
+          <div class="image-grid-x">
+            <div class="row">
+              <div class="col-lg-6 p-1">
+                <div class="image-item-1-x">
+                  <img
+                    src="{% static 'images/PIC-ONE-MISSION.jpeg' %}"
+                    alt="Image 1"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-6 p-1">
+                <div class="image-item-1-x">
+                  <img
+                    src="{% static 'images/PIC-TWO-MISSION.jpeg' %}"
+                    alt="Image 2"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-6 p-1">
+                <div class="image-item-1-x">
+                  <img
+                    src="{% static 'images/PIC-THREE-MISSION.jpeg' %}"
+                    alt="Image 3"
+                    id="image-three"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

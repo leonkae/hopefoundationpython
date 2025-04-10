@@ -441,7 +441,7 @@
 }
 @media screen and (max-width: 1000px) {
   .second-section-wrapper{
-    display: none;
+    height: 100%;
   }
 }
 .mission-vission-wrapper,
@@ -450,8 +450,11 @@
 }
 @media screen and (max-width: 1000px) {
   .mission-vission-wrapper{
-    width: 100%;
-    display: none;
+    padding-left: 1%;
+    padding-top: 5%;
+    padding-right: 1%;
+    padding-bottom: 5%;
+    /* display: none; */
   }
 }
 .nav-blur {
@@ -486,7 +489,7 @@
   font-size: medium;
   font-weight: 500;
   margin-bottom: 1rem;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 .section-content-title-line {
   margin-bottom: 1rem;
@@ -509,11 +512,16 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 20px;
 }
-.image-grid {
-  gap: 5px;
-  position: relative;
+.image-item-1-x{
+  height: 200px;
+}
+.image-item-1-x img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
 }
 .image-item-2 {
   position: absolute;
